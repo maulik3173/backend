@@ -11,6 +11,10 @@ const connectDB = async () => {
   catch (error){
     console.error('Error connecting to the database:', error);
     process.exit(1);
+    // what is process.exit(1) doing here?
+    // It terminates the Node.js process with a failure code (1), indicating that the
+    // application could not start due to a database connection failure.
+  
   }
 }
 
